@@ -1,4 +1,5 @@
 function equalWidth(main, submain) {
+    
     'use strict';
 
     var elements        = $(main).find(submain),
@@ -6,9 +7,17 @@ function equalWidth(main, submain) {
         maximumWidth    = null;
 
     elements.each(function () {
+
         $(this).removeAttr('style');
+
         widths.push($(this).width());
+
     });
+
     maximumWidth = Math.max.apply(null, widths);
-    elements.width(maximumHeight);
+
+    elements.width(maximumWidth);
+
+    return maximumWidth
+
 }
