@@ -1,9 +1,9 @@
 function equalWidth(main, submain) {
     'use strict';
 
-    var elements  = main.find(submain),
-        widths = [],
-        maximumWidth = null;
+    var elements        = $(main).find(submain),
+        widths          = [],
+        maximumWidth    = null;
 
     elements.each(function () {
         $(this).removeAttr('style');
