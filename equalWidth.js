@@ -18,6 +18,6 @@ function equalWidth(main, submain) {
 
     elements.width(maximumWidth);
 
-    return maximumWidth
+    return maximumWidth;
 
 }
